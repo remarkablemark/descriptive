@@ -28,7 +28,11 @@ module.exports = {
 
   parser: 'babel-eslint',
 
+  /* eslint-config-web-app:begin
   plugins: ['import', 'flowtype', 'jsx-a11y', 'react', 'react-hooks'],
+  */
+  plugins: ['import'],
+  // eslint-config-web-app:end
 
   env: {
     browser: true,
@@ -41,16 +45,20 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
+    /* eslint-config-web-app:begin
     ecmaFeatures: {
       jsx: true,
     },
+    // eslint-config-web-app:end */
   },
 
+  /* eslint-config-web-app:begin
   settings: {
     react: {
       version: 'detect',
     },
   },
+  // eslint-config-web-app:end */
 
   overrides: [
     {
@@ -59,9 +67,11 @@ module.exports = {
       parserOptions: {
         ecmaVersion: 2018,
         sourceType: 'module',
+        /* eslint-config-web-app:begin
         ecmaFeatures: {
           jsx: true,
         },
+        // eslint-config-web-app:end */
 
         // typescript-eslint specific options
         warnOnUnsupportedTypeScriptVersion: true,
@@ -226,7 +236,9 @@ module.exports = {
     ],
     'no-with': 'warn',
     'no-whitespace-before-property': 'warn',
+    /* eslint-config-web-app:begin
     'react-hooks/exhaustive-deps': 'warn',
+    // eslint-config-web-app:end */
     'require-yield': 'warn',
     'rest-spread-spacing': ['warn', 'never'],
     strict: ['warn', 'never'],
@@ -255,6 +267,7 @@ module.exports = {
     'import/no-amd': 'error',
     'import/no-webpack-loader-syntax': 'error',
 
+    /* eslint-config-web-app:begin
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
     'react/jsx-no-comment-textnodes': 'warn',
@@ -314,5 +327,6 @@ module.exports = {
     'flowtype/define-flow-type': 'warn',
     'flowtype/require-valid-file-annotation': 'warn',
     'flowtype/use-flow-type': 'warn',
+    // eslint-config-web-app:end */
   },
 };

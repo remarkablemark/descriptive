@@ -1,15 +1,15 @@
 {
-  "name": "eslint-config-react-app",
-  "version": "5.2.0",
-  "description": "ESLint configuration used by Create React App",
+  "name": "@descriptive/eslint-config-web-app",
+  "version": "1.0.0",
+  "description": "ESLint configuration for web apps",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
-    "directory": "packages/eslint-config-react-app"
+    "url": "https://github.com/remarkablemark/descriptive.git",
+    "directory": "packages/eslint-config-web-app"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/remarkablemark/descriptive/issues"
   },
   "files": [
     "index.js"
@@ -19,11 +19,7 @@
     "@typescript-eslint/parser": "2.x",
     "babel-eslint": "10.x",
     "eslint": "6.x",
-    "eslint-plugin-flowtype": "3.x || 4.x",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-react": "7.x",
-    "eslint-plugin-react-hooks": "1.x || 2.x"
+    "eslint-plugin-import": "2.x"
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.9"
