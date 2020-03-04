@@ -51,8 +51,10 @@ if (['build', 'eject', 'start', 'test'].includes(script)) {
   process.exit(result.status);
 } else {
   console.log('Unknown script "' + script + '".');
+  /* web-scripts:begin
   console.log('Perhaps you need to update react-scripts?');
   console.log(
     'See: https://facebook.github.io/create-react-app/docs/updating-to-new-releases'
   );
+  // web-scripts:end */
 }

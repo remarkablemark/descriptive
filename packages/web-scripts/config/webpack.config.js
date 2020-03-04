@@ -301,10 +301,14 @@ module.exports = function(webpackEnv) {
       alias: {
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
+        /* web-scripts:begin
         'react-native': 'react-native-web',
+        // web-scripts:end */
         // Allows for better profiling with ReactDevTools
         ...(isEnvProductionProfile && {
+          /* web-scripts:begin
           'react-dom$': 'react-dom/profiling',
+          // web-scripts:end */
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
@@ -342,6 +346,17 @@ module.exports = function(webpackEnv) {
           use: [
             {
               options: {
+                // web-scripts:begin
+                rules: isEnvDevelopment
+                  ? {
+                      'no-console': 0,
+                      'no-debugger': 0,
+                      'no-unused-vars': 0,
+                      'prettier/prettier': 0,
+                      'sort-imports': 0,
+                    }
+                  : {},
+                // web-scripts:end
                 cache: true,
                 formatter: require.resolve('react-dev-utils/eslintFormatter'),
                 eslintPath: require.resolve('eslint'),
@@ -351,7 +366,13 @@ module.exports = function(webpackEnv) {
                 baseConfig: isExtendingEslintConfig
                   ? undefined
                   : {
+                      /* web-scripts:begin
                       extends: [require.resolve('eslint-config-react-app')],
+                      */
+                      extends: [
+                        require.resolve('@descriptive/eslint-config-web-app'),
+                      ],
+                      // web-scripts:end
                     },
                 useEslintrc: isExtendingEslintConfig,
                 // @remove-on-eject-end
@@ -384,13 +405,19 @@ module.exports = function(webpackEnv) {
               include: paths.appSrc,
               loader: require.resolve('babel-loader'),
               options: {
+                /* web-scripts:begin
                 customize: require.resolve(
                   'babel-preset-react-app/webpack-overrides'
                 ),
+                // web-scripts:end */
                 // @remove-on-eject-begin
                 babelrc: false,
                 configFile: false,
+                /* web-scripts:begin
                 presets: [require.resolve('babel-preset-react-app')],
+                */
+                presets: [require.resolve('@babel/preset-env')],
+                // web-scripts:end
                 // Make sure we have a unique cache identifier, erring on the
                 // side of caution.
                 // We remove this when the user ejects because the default
@@ -402,9 +429,17 @@ module.exports = function(webpackEnv) {
                     : isEnvDevelopment && 'development',
                   [
                     'babel-plugin-named-asset-import',
+                    /* web-scripts:begin
                     'babel-preset-react-app',
+                    */
+                    '@babel/preset-env',
+                    // web-scripts:end
                     'react-dev-utils',
+                    /* web-scripts:begin
                     'react-scripts',
+                    */
+                    '@descriptive/web-scripts',
+                    // web-scripts:end
                   ]
                 ),
                 // @remove-on-eject-end
@@ -441,10 +476,14 @@ module.exports = function(webpackEnv) {
                 configFile: false,
                 compact: false,
                 presets: [
+                  /* web-scripts:begin
                   [
                     require.resolve('babel-preset-react-app/dependencies'),
                     { helpers: true },
                   ],
+                  */
+                  require.resolve('@babel/preset-env'),
+                  // web-scripts:end
                 ],
                 cacheDirectory: true,
                 // See #6846 for context on why cacheCompression is disabled
@@ -456,9 +495,17 @@ module.exports = function(webpackEnv) {
                     : isEnvDevelopment && 'development',
                   [
                     'babel-plugin-named-asset-import',
+                    /* web-scripts:begin
                     'babel-preset-react-app',
+                    */
+                    '@babel/preset-env',
+                    // web-scripts:end
                     'react-dev-utils',
+                    /* web-scripts:begin
                     'react-scripts',
+                    */
+                    '@descriptive/web-scripts',
+                    // web-scripts:end
                   ]
                 ),
                 // @remove-on-eject-end
