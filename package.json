@@ -12,6 +12,9 @@
     "husky": "^4.2.3",
     "lerna": "^3.20.2"
   },
+  "engines": {
+    "node": ">=8.10"
+  },
   "private": true,
   "license": "MIT"
 }
