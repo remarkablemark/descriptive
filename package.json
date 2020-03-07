@@ -4,6 +4,7 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
     "release": "lerna publish --no-git-reset",
+    "release:dry-run": "lerna version --no-git-tag-version --no-push",
     "updated": "lerna updated"
   },
   "devDependencies": {
