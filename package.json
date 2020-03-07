@@ -1,7 +1,10 @@
 {
   "name": "root",
   "scripts": {
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean --yes",
+    "release": "lerna publish --no-git-reset",
+    "updated": "lerna updated"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
