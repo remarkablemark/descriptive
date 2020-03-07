@@ -23,5 +23,8 @@
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.9"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
