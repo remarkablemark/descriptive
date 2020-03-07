@@ -2,5 +2,25 @@
   "packages": [
     "packages/*"
   ],
-  "version": "independent"
+  "version": "independent",
+  "command": {
+    "publish": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "commitHooks": false,
+      "exact": true,
+      "ignoreChanges": [
+        "**/__fixtures__/**",
+        "**/__snapshots__/**",
+        "**/__tests__/**",
+        "**/*.md",
+        "**/*.spec.js",
+        "**/*.test.js"
+      ],
+      "ignoreScripts": true,
+      "message": "chore(release): publish",
+      "verbose": true,
+      "yes": true
+    }
+  }
 }
