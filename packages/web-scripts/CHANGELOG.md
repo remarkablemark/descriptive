@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@1.0.0...@descriptive/web-scripts@1.0.1) (2020-03-16)
+
+
+### Bug Fixes
+
+* **web-scripts:** comment out `react-app-polyfill/jsdom` ([8fcd912](https://github.com/remarkablemark/descriptive/commit/8fcd9129b5174fa028d5b16d967b0d443471de3d))
+
+
+
+
+
 # 1.0.0 (2020-03-07)
 
 
