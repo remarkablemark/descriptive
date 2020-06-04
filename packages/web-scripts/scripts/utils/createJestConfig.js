@@ -27,31 +27,30 @@ module.exports = (resolve, rootDir, isEjecting) => {
 
     collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts'],
 
-    /* web-scripts:begin
     setupFiles: [
       isEjecting
         ? 'react-app-polyfill/jsdom'
         : require.resolve('react-app-polyfill/jsdom'),
     ],
-    // web-scripts:end */
 
     setupFilesAfterEnv: setupTestsFile ? [setupTestsFile] : [],
     testMatch: [
       '<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}',
       '<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}',
     ],
-    testEnvironment: 'jest-environment-jsdom-fourteen',
+    testEnvironment: 'jsdom',
+    testRunner: require.resolve('jest-circus/runner'),
     transform: {
-      '^.+\\.(js|jsx|ts|tsx)$': isEjecting
+      '^.+\\.(js|jsx|mjs|cjs|ts|tsx)$': isEjecting
         ? '<rootDir>/node_modules/babel-jest'
         : resolve('config/jest/babelTransform.js'),
       '^.+\\.css$': resolve('config/jest/cssTransform.js'),
-      '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': resolve(
+      '^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)': resolve(
         'config/jest/fileTransform.js'
       ),
     },
     transformIgnorePatterns: [
-      '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$',
+      '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$',
       '^.+\\.module\\.(css|sass|scss)$',
     ],
     modulePaths: modules.additionalModulePaths || [],
@@ -67,6 +66,7 @@ module.exports = (resolve, rootDir, isEjecting) => {
       'jest-watch-typeahead/filename',
       'jest-watch-typeahead/testname',
     ],
+    resetMocks: true,
   };
   if (rootDir) {
     config.rootDir = rootDir;

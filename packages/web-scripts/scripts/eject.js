@@ -336,11 +336,9 @@ inquirer
       console.log();
     }
 
-    /* web-scripts:begin
     console.log(
       green('Please consider sharing why you ejected in this survey:')
     );
     console.log(green('  http://goo.gl/forms/Bi6CZjk1EqsdelXk1'));
     console.log();
-    // web-scripts:end */
   });

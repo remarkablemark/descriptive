@@ -1,6 +1,6 @@
 # @descriptive/web-scripts
 
-Inspired by [react-scripts](https://github.com/facebook/create-react-app/tree/v3.4.0/packages/react-scripts).
+Inspired by [react-scripts](https://github.com/facebook/create-react-app/tree/v3.4.1/packages/react-scripts).
 
 ## Installation
 
@@ -10,28 +10,42 @@ $ npm install @descriptive/web-scripts
 
 ## Changes
 
-Removed the files and folders:
+### Files
 
-```
-.npmignore
-LICENSE
-fixtures/
-lib/
-template-typescript/
-```
+Removed files and folders:
 
-Updated the files:
+- .npmignore
+- LICENSE
+- fixtures/
+- lib/
+- template-typescript/
 
-```
-README.md
-bin/{react-scripts.js => web-scripts.js}
-config/env.js
-config/webpack.config.js
-package.json
-scripts/eject.js
+```sh
+rm -rf .npmignore LICENSE fixtures lib template-typescript
 ```
 
-`package.json` dependencies diff:
+Updated files:
+
+- README.md
+- config/env.js
+- config/webpack.config.js
+- package.json
+
+### package.json
+
+Remove dependencies:
+
+```sh
+npm rm -S babel-preset-react-app eslint-config-react-app eslint-plugin-react eslint-plugin-react-hooks react-app-polyfill
+```
+
+Install dependencies:
+
+```sh
+npm i -S @babel/preset-env @descriptive/eslint-config-web-app
+```
+
+See diff:
 
 ```diff
 +@babel/preset-env
@@ -45,4 +59,4 @@ scripts/eject.js
 
 ## License
 
-[MIT](https://github.com/facebook/create-react-app/blob/v3.4.0/packages/react-scripts/LICENSE)
+[MIT](https://github.com/facebook/create-react-app/blob/v3.4.1/packages/react-scripts/LICENSE)
