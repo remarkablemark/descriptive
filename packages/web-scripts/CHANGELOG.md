@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@1.0.1...@descriptive/web-scripts@1.0.2) (2020-06-04)
+
+
+### Bug Fixes
+
+* **web-scripts:** update with `react-scripts` v3.4.1 ([003e6a8](https://github.com/remarkablemark/descriptive/commit/003e6a871565640afd91af5026aa6c2892ead49a))
+
+
+
+
+
 ## [1.0.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@1.0.0...@descriptive/web-scripts@1.0.1) (2020-03-16)
 
 
