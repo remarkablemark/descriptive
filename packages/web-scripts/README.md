@@ -30,6 +30,7 @@ Updated files:
 - config/env.js
 - config/webpack.config.js
 - package.json
+- scripts/utils/createJestConfig.js
 
 ### package.json
 
