@@ -2,10 +2,26 @@
 
 Inspired by [react-scripts](https://github.com/facebook/create-react-app/tree/v3.4.1/packages/react-scripts).
 
-## Installation
+To migrate ejected [Create React App](https://github.com/facebook/create-react-app) to `@descriptive/web-scripts`:
 
 ```sh
-$ npm install @descriptive/web-scripts
+npx https://gist.github.com/remarkablemark/f3644d65665dc07a91d7f7202c5a66b6
+```
+
+See [gist](https://gist.github.com/remarkablemark/f3644d65665dc07a91d7f7202c5a66b6).
+
+## Installation
+
+[npm](https://www.npmjs.com/package/@descriptive/web-scripts):
+
+```sh
+npm install @descriptive/web-scripts --save-exact
+```
+
+[Yarn](https://yarnpkg.com/package/@descriptive/web-scripts):
+
+```sh
+yarn add @descriptive/web-scripts --exact
 ```
 
 ## Changes
@@ -34,13 +50,19 @@ Updated files:
 
 ### package.json
 
-Remove dependencies:
+Removed dependencies:
 
 ```sh
 npm rm -S babel-preset-react-app eslint-config-react-app eslint-plugin-react eslint-plugin-react-hooks react-app-polyfill
 ```
 
-Install dependencies:
+Removed devDependencies:
+
+```sh
+npm rm -D react react-dom
+```
+
+Installed dependencies:
 
 ```sh
 npm i -S @babel/preset-env @descriptive/eslint-config-web-app
@@ -56,6 +78,8 @@ See diff:
 -eslint-plugin-react
 -eslint-plugin-react-hooks
 -react-app-polyfill
+-react
+-react-dom
 ```
 
 ## License
