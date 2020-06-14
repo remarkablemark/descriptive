@@ -71,6 +71,7 @@ npm i -S @babel/preset-env @descriptive/eslint-config-web-app
 See diff:
 
 ```diff
++@babel/plugin-proposal-class-properties
 +@babel/preset-env
 +@descriptive/eslint-config-web-app
 -babel-preset-react-app

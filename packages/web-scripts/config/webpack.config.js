@@ -458,6 +458,12 @@ module.exports = function (webpackEnv) {
                 ),
                 // @remove-on-eject-end
                 plugins: [
+                  // web-scripts:begin
+                  [
+                    require.resolve('@babel/plugin-proposal-class-properties'),
+                    { loose: true },
+                  ],
+                  // web-scripts:end
                   [
                     require.resolve('babel-plugin-named-asset-import'),
                     {
@@ -516,6 +522,7 @@ module.exports = function (webpackEnv) {
                     'babel-preset-react-app',
                     */
                     '@babel/preset-env',
+                    '@babel/plugin-proposal-class-properties',
                     // web-scripts:end
                     'react-dev-utils',
                     /* web-scripts:begin
