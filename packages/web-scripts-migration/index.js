@@ -159,8 +159,6 @@ exec('git add package.json');
  * Commit changes.
  */
 log('Committing changes...');
-exec(
-  'git commit -m "refactor: migrate to @descriptive/web-scripts" -m "https://gist.github.com/remarkablemark/f3644d65665dc07a91d7f7202c5a66b6"'
-);
+exec('git commit -m "refactor: run web-scripts-migration"');
 
 log(`Finished ${name}`);
