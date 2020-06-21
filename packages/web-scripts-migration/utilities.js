@@ -10,7 +10,11 @@ const cwd = process.cwd();
  * @param {String} command
  * @return {String}
  */
-const exec = command => execSync(command, { cwd, stdio: 'inherit' });
+const exec = command =>
+  execSync(command, {
+    cwd,
+    stdio: 'inherit',
+  });
 
 /**
  * Logs to console.
@@ -35,5 +39,5 @@ module.exports = {
   cwd: cwd,
   exec: exec,
   log: log,
-  write: write
+  write: write,
 };

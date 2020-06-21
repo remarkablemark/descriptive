@@ -30,7 +30,7 @@ const files = [
   'config/webpack.config.js',
   'config/webpackDevServer.config.js',
   'scripts/build.js',
-  'scripts/start.js'
+  'scripts/start.js',
 ];
 exec(`git rm --ignore-unmatch ${files.join(' ')}`);
 
@@ -84,8 +84,8 @@ write('.eslintrc.json', {
   rules: {
     'no-debugger': 'error',
     'no-console': 'error',
-    'prettier/prettier': 'error'
-  }
+    'prettier/prettier': 'error',
+  },
 });
 exec('git add .eslintrc.json');
 
@@ -141,7 +141,7 @@ const devDependencies = [
   'webpack',
   'webpack-dev-server',
   'webpack-manifest-plugin',
-  'workbox-webpack-plugin'
+  'workbox-webpack-plugin',
 ];
 if (isPhaser) {
   devDependencies.push('@babel/plugin-proposal-class-properties');
