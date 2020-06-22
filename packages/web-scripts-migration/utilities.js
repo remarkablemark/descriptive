@@ -1,4 +1,4 @@
-const { execSync } = require('child_process');
+const { execSync, spawnSync } = require('child_process');
 const { resolve } = require('path');
 const { writeFileSync } = require('fs');
 
@@ -28,6 +28,21 @@ const exec = command =>
 const log = (...args) => console.log('INFO:', ...args);
 
 /**
+ * Runs command with `spawn`.
+ *
+ * @see {@link https://nodejs.org/api/child_process.html#child_process_child_process_spawnsync_command_args_options}
+ *
+ * @param {String} command
+ * @param {String[]} [args]
+ * @return {String}
+ */
+const spawn = (command, args) =>
+  spawnSync(command, args, {
+    cwd,
+    stdio: 'inherit',
+  });
+
+/**
  * Writes to file.
  *
  * @see {@link https://nodejs.org/api/fs.html#fs_fs_writefilesync_file_data_options}
@@ -42,8 +57,9 @@ const write = (file, data) =>
   );
 
 module.exports = {
-  cwd: cwd,
-  exec: exec,
-  log: log,
-  write: write,
+  cwd,
+  exec,
+  log,
+  spawn,
+  write,
 };
