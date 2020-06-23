@@ -1,5 +1,25 @@
 {
   "name": "web-scripts-migration",
   "version": "1.0.0-alpha",
-  "bin": "index.js"
+  "description": "Migrates web-app-template to @descriptive/web-scripts",
+  "author": "Mark <mark@remarkablemark.org>",
+  "bin": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remarkablemark/descriptive.git",
+    "directory": "packages/web-scripts-migration"
+  },
+  "bugs": {
+    "url": "https://github.com/remarkablemark/descriptive/issues"
+  },
+  "keywords": [
+    "web-scripts-migration",
+    "web-scripts",
+    "migration",
+    "script"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "MIT"
 }
