@@ -18,6 +18,9 @@
     "migration",
     "script"
   ],
+  "dependencies": {
+    "jscodeshift": "0.10.0"
+  },
   "engines": {
     "node": ">=10"
   },
