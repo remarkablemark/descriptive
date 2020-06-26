@@ -21,6 +21,11 @@
   "dependencies": {
     "jscodeshift": "0.10.0"
   },
+  "files": [
+    "/transforms",
+    "/index.js",
+    "/utilities.js"
+  ],
   "engines": {
     "node": ">=10"
   },
