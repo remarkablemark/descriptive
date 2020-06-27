@@ -2,6 +2,8 @@ const { execSync, spawnSync } = require('child_process');
 const { resolve } = require('path');
 const { writeFileSync } = require('fs');
 
+const jscodeshiftBinary = require.resolve('.bin/jscodeshift');
+
 const cwd = process.cwd();
 
 /**
@@ -56,9 +58,28 @@ const write = (file, data) =>
     (typeof data === 'string' ? data : JSON.stringify(data, null, 2)) + '\n'
   );
 
+/**
+ * Runs codemod given transform module and path.
+ *
+ * @see {@link https://github.com/facebook/jscodeshift}
+ *
+ * @param {String} transform
+ * @param {String} path
+ * @return {String}
+ */
+const jscodeshift = (transform, path) =>
+  spawn(jscodeshiftBinary, [
+    '--transform',
+    transform,
+    '--ignore-pattern',
+    'node_modules',
+    path,
+  ]);
+
 module.exports = {
   cwd,
   exec,
+  jscodeshift,
   log,
   spawn,
   write,
