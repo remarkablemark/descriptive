@@ -2,7 +2,7 @@
 
 const { resolve } = require('path');
 
-const { cwd, exec, log, write } = require('./utilities');
+const { cwd, exec, jscodeshift, log, write } = require('./utilities');
 const { name, version } = require('./package.json');
 
 const isPhaser = process.argv.indexOf('--phaser') !== -1;
@@ -64,17 +64,6 @@ WEB_APP_VERSION=$npm_package_version`
 }
 
 /**
- * Update files.
- */
-if (isPhaser) {
-  exec('git grep -l APP_ | xargs sed -i "" -e "s/APP_/WEB_APP_/g"');
-  exec(
-    'git grep -l WEB_APP_PHASER_SCRIPT_SRC | xargs sed -i "" -e "s/WEB_APP_PHASER_SCRIPT_SRC/WEB_APP_PHASER_SCRIPT/g"'
-  );
-  exec('git grep -l WEB_APP_ | xargs git add');
-}
-
-/**
  * Add `.eslintrc.json`.
  */
 log('Adding `.eslintrc.json`...');
@@ -88,6 +77,22 @@ write('.eslintrc.json', {
   },
 });
 exec('git add .eslintrc.json');
+
+/**
+ * Update files and run codemods.
+ */
+jscodeshift(
+  resolve(__dirname, 'transforms/require-default.js'),
+  resolve(cwd, 'src')
+);
+exec('git add -u');
+if (isPhaser) {
+  exec('git grep -l APP_ | xargs sed -i "" -e "s/APP_/WEB_APP_/g"');
+  exec(
+    'git grep -l WEB_APP_PHASER_SCRIPT_SRC | xargs sed -i "" -e "s/WEB_APP_PHASER_SCRIPT_SRC/WEB_APP_PHASER_SCRIPT/g"'
+  );
+  exec('git grep -l WEB_APP_ | xargs git add');
+}
 
 /**
  * Remove dependencies.
