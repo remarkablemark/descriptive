@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - stable
+install:
+  - npm install
+  - npm run bootstrap
+script:
+  - npx commitlint --from=HEAD~1
+  - npm run lint
+  - npm test
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
