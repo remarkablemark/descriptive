@@ -1,21 +1,13 @@
 # @descriptive/web-scripts
 
-Inspired by [react-scripts](https://github.com/facebook/create-react-app/tree/v3.4.1/packages/react-scripts).
-
-To migrate ejected [Create React App](https://github.com/facebook/create-react-app) to `@descriptive/web-scripts`:
-
-```sh
-npx https://gist.github.com/remarkablemark/f3644d65665dc07a91d7f7202c5a66b6
-```
-
-See [gist](https://gist.github.com/remarkablemark/f3644d65665dc07a91d7f7202c5a66b6).
+Inspired by [react-scripts](https://github.com/facebook/create-react-app/tree/v3.4.1/packages/react-scripts) from [Create React App](https://github.com/facebook/create-react-app).
 
 ## Installation
 
 [npm](https://www.npmjs.com/package/@descriptive/web-scripts):
 
 ```sh
-npm install @descriptive/web-scripts --save-exact
+npm install @descriptive/web-scripts --save --save-exact
 ```
 
 [Yarn](https://yarnpkg.com/package/@descriptive/web-scripts):
@@ -82,6 +74,16 @@ See diff:
 -react
 -react-dom
 ```
+
+## Migration
+
+To migrate [web-app-template](https://github.com/remarkablemark/web-app-template) to [@descriptive/web-scripts](https://www.npmjs.com/package/@descriptive/web-scripts):
+
+```sh
+npx web-scripts-migration
+```
+
+See [web-scripts-migration](https://github.com/remarkablemark/descriptive/tree/master/packages/web-scripts-migration).
 
 ## License
 

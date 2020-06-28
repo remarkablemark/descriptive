@@ -3,16 +3,17 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
+    "lint": "lerna run lint",
     "release": "lerna publish --no-git-reset",
     "release:dry-run": "lerna version --no-git-tag-version --no-push",
+    "test": "lerna run test",
     "updated": "lerna updated"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
     "husky": "^4.2.5",
-    "lerna": "^3.22.0",
-    "prettier": "^2.0.5"
+    "lerna": "^3.22.0"
   },
   "engines": {
     "node": ">=8.10"

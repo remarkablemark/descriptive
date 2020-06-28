@@ -1,0 +1,45 @@
+{
+  "name": "web-scripts-migration",
+  "version": "1.0.0-alpha",
+  "description": "Migrates web-app-template to @descriptive/web-scripts",
+  "author": "Mark <mark@remarkablemark.org>",
+  "bin": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "prepublishOnly": "npm run lint && npm test",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remarkablemark/descriptive.git",
+    "directory": "packages/web-scripts-migration"
+  },
+  "bugs": {
+    "url": "https://github.com/remarkablemark/descriptive/issues"
+  },
+  "keywords": [
+    "web-scripts-migration",
+    "web-scripts",
+    "migration",
+    "script"
+  ],
+  "dependencies": {
+    "jscodeshift": "0.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "26.0.1",
+    "prettier": "^2.0.5"
+  },
+  "files": [
+    "/transforms/require-default.js",
+    "/index.js",
+    "/utilities.js"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "MIT"
+}
