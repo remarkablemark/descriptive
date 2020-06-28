@@ -3,8 +3,10 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
     "clean": "lerna clean --yes",
+    "lint": "lerna run lint",
     "release": "lerna publish --no-git-reset",
     "release:dry-run": "lerna version --no-git-tag-version --no-push",
+    "test": "lerna run test",
     "updated": "lerna updated"
   },
   "devDependencies": {
