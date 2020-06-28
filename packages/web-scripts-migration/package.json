@@ -4,6 +4,9 @@
   "description": "Migrates web-app-template to @descriptive/web-scripts",
   "author": "Mark <mark@remarkablemark.org>",
   "bin": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/remarkablemark/descriptive.git",
@@ -21,8 +24,11 @@
   "dependencies": {
     "jscodeshift": "0.10.0"
   },
+  "devDependencies": {
+    "jest": "^26.1.0"
+  },
   "files": [
-    "/transforms",
+    "/transforms/require-default.js",
     "/index.js",
     "/utilities.js"
   ],
