@@ -1,6 +1,6 @@
 {
   "name": "@descriptive/eslint-config-web-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint configuration for web apps",
   "repository": {
     "type": "git",
