@@ -3,6 +3,7 @@
 [Monorepo](https://github.com/lerna/lerna) of [packages](packages):
 
 - [eslint-config-web-app](packages/eslint-config-web-app)
+- [web-scripts-migration](packages/web-scripts-migration)
 - [web-scripts](packages/web-scripts)
 
 ## Installation
