@@ -11,8 +11,7 @@
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
     "husky": "^4.2.5",
-    "lerna": "^3.22.0",
-    "prettier": "^2.0.5"
+    "lerna": "^3.22.0"
   },
   "engines": {
     "node": ">=8.10"
