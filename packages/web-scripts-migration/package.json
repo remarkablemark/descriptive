@@ -1,6 +1,6 @@
 {
   "name": "web-scripts-migration",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-0",
   "description": "Migrates web-app-template to @descriptive/web-scripts",
   "author": "Mark <mark@remarkablemark.org>",
   "bin": "index.js",
