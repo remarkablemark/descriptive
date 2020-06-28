@@ -6,7 +6,12 @@ module.exports = {
     'scope-enum': [
       2,
       'always',
-      ['all', require('./package').name, ...readdirSync('./packages')],
+      [
+        'all',
+        'release',
+        require('./package').name,
+        ...readdirSync('./packages'),
+      ],
     ],
     'scope-empty': [2, 'never'],
   },
