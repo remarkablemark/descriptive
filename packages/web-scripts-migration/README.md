@@ -1,5 +1,9 @@
 # web-scripts-migration
 
+[![NPM](https://nodei.co/npm/web-scripts-migration.png)](https://nodei.co/npm/web-scripts-migration/)
+
+[![NPM version](https://img.shields.io/npm/v/web-scripts-migration.svg)](https://www.npmjs.com/package/web-scripts-migration)
+
 Migrates [web-app-template](https://github.com/remarkablemark/web-app-template) to [@descriptive/web-scripts](https://www.npmjs.com/package/@descriptive/web-scripts):
 
 ```sh
