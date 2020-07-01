@@ -1,5 +1,7 @@
 # @descriptive
 
+[![Build Status](https://travis-ci.org/remarkablemark/descriptive.svg?branch=master)](https://travis-ci.org/remarkablemark/descriptive)
+
 [Monorepo](https://github.com/lerna/lerna) of [packages](packages):
 
 - [eslint-config-web-app](packages/eslint-config-web-app)
