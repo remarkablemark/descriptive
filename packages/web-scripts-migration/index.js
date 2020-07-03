@@ -69,7 +69,10 @@ jscodeshift(
 );
 exec('git add -u');
 if (isPhaser) {
-  exec('git grep -l APP_ | xargs sed -i "" -e "s/APP_/WEB_APP_/g"');
+  // replace environment variables matching `APP_*` with `WEB_APP_*`
+  exec(
+    'git grep -l -e "APP_" --and --not -e "WEB_APP_" | xargs sed -i "" -e "/WEB_APP_/! s/APP_/WEB_APP_/g"'
+  );
   exec(
     'git grep -l WEB_APP_PHASER_SCRIPT_SRC | xargs sed -i "" -e "s/WEB_APP_PHASER_SCRIPT_SRC/WEB_APP_PHASER_SCRIPT/g"'
   );
