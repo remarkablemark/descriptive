@@ -167,6 +167,6 @@ exec('git add package.json');
  * Commit changes.
  */
 log('Committing changes...');
-exec('git commit -m "refactor: run web-scripts-migration"');
+exec(`git commit -m "refactor: run web-scripts-migration v${version}"`);
 
 log(`Finished ${name}`);
