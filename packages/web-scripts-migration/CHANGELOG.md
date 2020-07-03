@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/remarkablemark/descriptive/compare/web-scripts-migration@1.0.0...web-scripts-migration@1.0.1) (2020-07-03)
+
+
+### Bug Fixes
+
+* **web-scripts-migration:** add .env after sed is run for phaser ([c468d9b](https://github.com/remarkablemark/descriptive/commit/c468d9bf1a3ec5b850bbb9b388e65fb2c72c7f0b))
+* **web-scripts-migration:** do not replace WEB_APP_* env vars ([d3ed9d6](https://github.com/remarkablemark/descriptive/commit/d3ed9d65d190a564a76d19c3634a1f3dd6b1ccb8))
+
+
+
+
+
 # 1.0.0 (2020-06-28)
 
 
