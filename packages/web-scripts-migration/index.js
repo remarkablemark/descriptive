@@ -46,24 +46,6 @@ packageJson.scripts['test:ci'] = 'CI=true npm test -- --passWithNoTests';
 write('package.json', packageJson);
 
 /**
- * Add `.env`.
- */
-if (isPhaser) {
-  log('Adding `.env`...');
-  write(
-    '.env',
-    `# Expected environment variables.
-IMAGE_INLINE_SIZE_LIMIT=0 # Local data URIs are not supported in Phaser 3.
-
-# Custom environment variables.
-WEB_APP_HOMEPAGE=$npm_package_homepage
-WEB_APP_PHASER_SCRIPT=//cdn.jsdelivr.net/npm/phaser@$npm_package_devDependencies_phaser/dist/phaser.min.js
-WEB_APP_VERSION=$npm_package_version`
-  );
-  exec('git add .env');
-}
-
-/**
  * Add `.eslintrc.json`.
  */
 log('Adding `.eslintrc.json`...');
@@ -92,6 +74,24 @@ if (isPhaser) {
     'git grep -l WEB_APP_PHASER_SCRIPT_SRC | xargs sed -i "" -e "s/WEB_APP_PHASER_SCRIPT_SRC/WEB_APP_PHASER_SCRIPT/g"'
   );
   exec('git grep -l WEB_APP_ | xargs git add');
+}
+
+/**
+ * Add `.env` (this must happen after `s/APP_/WEB_APP_/g` is run).
+ */
+if (isPhaser) {
+  log('Adding `.env`...');
+  write(
+    '.env',
+    `# Expected environment variables.
+IMAGE_INLINE_SIZE_LIMIT=0 # Local data URIs are not supported in Phaser 3.
+
+# Custom environment variables.
+WEB_APP_HOMEPAGE=$npm_package_homepage
+WEB_APP_PHASER_SCRIPT=//cdn.jsdelivr.net/npm/phaser@$npm_package_devDependencies_phaser/dist/phaser.min.js
+WEB_APP_VERSION=$npm_package_version`
+  );
+  exec('git add .env');
 }
 
 /**
