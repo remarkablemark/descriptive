@@ -28,6 +28,13 @@ Install and link dependencies:
 $ npm run bootstrap
 ```
 
+Update `package-lock.json`:
+
+```sh
+$ rm -rf node_modules package-lock.json
+$ npm install
+```
+
 ## Developing
 
 Let's say you made changes to the `web-scripts` package.
