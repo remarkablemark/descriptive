@@ -66,7 +66,7 @@ process.env.NODE_PATH = (process.env.NODE_PATH || '')
 
 // Grab NODE_ENV and REACT_APP_* environment variables and prepare them to be
 // injected into the application via DefinePlugin in webpack configuration.
-/* web-scripts:begin
+/* web-scripts:start
 const REACT_APP = /^REACT_APP_/i;
 */
 const REACT_APP = /^WEB_APP_/i;
@@ -101,7 +101,7 @@ function getClientEnvironment(publicUrl) {
         // react-refresh is not 100% stable at this time,
         // which is why it's disabled by default.
         // It is defined here so it is available in the webpackHotDevClient.
-        FAST_REFRESH: process.env.FAST_REFRESH || false,
+        FAST_REFRESH: process.env.FAST_REFRESH !== 'false',
       }
     );
   // Stringify all values so we can feed into webpack DefinePlugin

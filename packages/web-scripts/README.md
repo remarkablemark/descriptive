@@ -1,78 +1,101 @@
 # @descriptive/web-scripts
 
-Inspired by [react-scripts](https://github.com/facebook/create-react-app/tree/v3.4.1/packages/react-scripts) from [Create React App](https://github.com/facebook/create-react-app).
+[![NPM version](https://img.shields.io/npm/v/@descriptive/web-scripts.svg)](https://www.npmjs.com/package/@descriptive/web-scripts)
 
-## Installation
+See [react-scripts](https://www.npmjs.com/package/react-scripts/v/4.0.1) ([repository](https://github.com/facebook/create-react-app/tree/v4.0.1/packages/react-scripts)).
 
-[npm](https://www.npmjs.com/package/@descriptive/web-scripts):
-
-```sh
-npm install @descriptive/web-scripts --save --save-exact
-```
-
-[Yarn](https://yarnpkg.com/package/@descriptive/web-scripts):
+## Install
 
 ```sh
-yarn add @descriptive/web-scripts --exact
+npm install @descriptive/web-scripts
 ```
 
 ## Changes
 
-### Files
+New files:
+
+```
+CHANGELOG.md
+package-lock.json
+```
 
 Removed files and folders:
 
-- .npmignore
-- LICENSE
-- fixtures/
-- lib/
-- template-typescript/
+```
+fixtures/
+template-typescript/
+template/
+.npmignore
+LICENSE
+```
+
+Remove the files and folders:
 
 ```sh
-rm -rf .npmignore LICENSE fixtures lib template-typescript
+rm -rf fixtures/ \
+       template-typescript/ \
+       template/ \
+       .npmignore \
+       LICENSE
 ```
 
 Updated files:
 
-- README.md
-- config/env.js
-- config/webpack.config.js
-- package.json
-- scripts/utils/createJestConfig.js
-
-### package.json
-
-Removed dependencies:
-
-```sh
-npm rm -S babel-preset-react-app eslint-config-react-app eslint-plugin-react eslint-plugin-react-hooks react-app-polyfill
+```
+config/env.js
+config/jest/babelTransform.js
+config/webpack.config.js
+scripts/start.js
+package.json
+README.md
 ```
 
-Removed devDependencies:
-
-```sh
-npm rm -D react react-dom
-```
-
-Installed dependencies:
-
-```sh
-npm i -S @babel/preset-env @descriptive/eslint-config-web-app
-```
-
-See diff:
+`package.json` diff:
 
 ```diff
-+@babel/plugin-proposal-class-properties
-+@babel/preset-env
-+@descriptive/eslint-config-web-app
--babel-preset-react-app
--eslint-config-react-app
--eslint-plugin-react
--eslint-plugin-react-hooks
--react-app-polyfill
--react
--react-dom
+ {
+   "dependencies": {
+-    "babel-preset-react-app": "^10.0.0",
+-    "eslint-config-react-app": "^6.0.0",
+-    "eslint-plugin-react": "^7.21.5",
+-    "eslint-plugin-react-hooks": "^4.2.0",
+-    "react-app-polyfill": "^2.0.0",
++    "@babel/plugin-proposal-class-properties": "^7.12.1",
++    "@babel/preset-env": "^7.12.11",
++    "@descriptive/eslint-config-web-app": "1.0.1",
+   },
+-  "devDependencies": {
+-    "react": "^17.0.1",
+-    "react-dom": "^17.0.1"
+-  },
+   "peerDependencies": {
+-    "react": ">= 16",
+   },
+ }
+```
+
+Remove the dependencies:
+
+```sh
+npm rm -S babel-preset-react-app \
+          eslint-config-react-app \
+          eslint-plugin-react \
+          eslint-plugin-react-hooks \
+          react-app-polyfill
+```
+
+Remove the devDependencies:
+
+```sh
+npm rm -D react \
+          react-dom
+```
+
+Save the dependencies:
+
+```sh
+npm i -S @babel/preset-env \
+         @descriptive/eslint-config-web-app
 ```
 
 ## Migration
@@ -87,4 +110,4 @@ See [web-scripts-migration](https://github.com/remarkablemark/descriptive/tree/m
 
 ## License
 
-[MIT](https://github.com/facebook/create-react-app/blob/v3.4.1/packages/react-scripts/LICENSE)
+[MIT](https://github.com/facebook/create-react-app/blob/v4.0.1/packages/react-scripts/LICENSE)
