@@ -1,6 +1,6 @@
 # @descriptive
 
-[![Build Status](https://travis-ci.org/remarkablemark/descriptive.svg?branch=master)](https://travis-ci.org/remarkablemark/descriptive)
+[![Build Status](https://github.com/remarkablemark/descriptive/workflows/build/badge.svg?branch=master)](https://github.com/remarkablemark/descriptive/actions?query=workflow%3Abuild)
 
 [Monorepo](https://github.com/lerna/lerna) of [packages](packages):
 
@@ -8,12 +8,12 @@
 - [web-scripts-migration](packages/web-scripts-migration)
 - [web-scripts](packages/web-scripts)
 
-## Installation
+## Install
 
 Clone repository:
 
 ```sh
-$ git clone https://github.com/remarkablemark/descriptive.git && cd $_
+$ git clone https://github.com/remarkablemark/descriptive.git && cd descriptive
 ```
 
 Install root dependencies:
@@ -35,7 +35,7 @@ $ rm -rf node_modules package-lock.json
 $ npm install
 ```
 
-## Developing
+## Develop
 
 Let's say you made changes to the `web-scripts` package.
 
