@@ -10,8 +10,8 @@
 // Inspired by https://github.com/airbnb/javascript but less opinionated.
 
 // We use eslint-loader so even warnings are very visible.
-// This is why we only use "WARNING" level for potential errors,
-// and we don't use "ERROR" level at all.
+// This is why we prefer to use "WARNING" level for potential errors,
+// and we try not to use "ERROR" level at all.
 
 // In the future, we might create a separate list of rules for production.
 // It would probably be more strict.
@@ -24,41 +24,13 @@
 const restrictedGlobals = require('confusing-browser-globals');
 
 module.exports = {
-  root: true,
+  extends: [require.resolve('./base')],
 
-  parser: 'babel-eslint',
-
-  /* eslint-config-web-app:begin
-  plugins: ['import', 'flowtype', 'jsx-a11y', 'react', 'react-hooks'],
+  /* eslint-config-web-app:start
+  plugins: ['import', 'flowtype', 'jsx-a11y', 'react-hooks'],
   */
   plugins: ['import'],
   // eslint-config-web-app:end
-
-  env: {
-    browser: true,
-    commonjs: true,
-    es6: true,
-    jest: true,
-    node: true,
-  },
-
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-    /* eslint-config-web-app:begin
-    ecmaFeatures: {
-      jsx: true,
-    },
-    // eslint-config-web-app:end */
-  },
-
-  /* eslint-config-web-app:begin
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
-  // eslint-config-web-app:end */
 
   overrides: [
     {
@@ -67,7 +39,7 @@ module.exports = {
       parserOptions: {
         ecmaVersion: 2018,
         sourceType: 'module',
-        /* eslint-config-web-app:begin
+        /* eslint-config-web-app:start
         ecmaFeatures: {
           jsx: true,
         },
@@ -91,6 +63,8 @@ module.exports = {
         '@typescript-eslint/consistent-type-assertions': 'warn',
         'no-array-constructor': 'off',
         '@typescript-eslint/no-array-constructor': 'warn',
+        'no-redeclare': 'off',
+        '@typescript-eslint/no-redeclare': 'warn',
         'no-use-before-define': 'off',
         '@typescript-eslint/no-use-before-define': [
           'warn',
@@ -181,9 +155,7 @@ module.exports = {
     'no-obj-calls': 'warn',
     'no-octal': 'warn',
     'no-octal-escape': 'warn',
-    // TODO: Remove this option in the next major release of CRA.
-    // https://eslint.org/docs/user-guide/migrating-to-6.0.0#-the-no-redeclare-rule-is-now-more-strict-by-default
-    'no-redeclare': ['warn', { builtinGlobals: false }],
+    'no-redeclare': 'warn',
     'no-regex-spaces': 'warn',
     'no-restricted-syntax': ['warn', 'WithStatement'],
     'no-script-url': 'warn',
@@ -236,7 +208,7 @@ module.exports = {
     ],
     'no-with': 'warn',
     'no-whitespace-before-property': 'warn',
-    /* eslint-config-web-app:begin
+    /* eslint-config-web-app:start
     'react-hooks/exhaustive-deps': 'warn',
     // eslint-config-web-app:end */
     'require-yield': 'warn',
@@ -265,10 +237,11 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
     'import/first': 'error',
     'import/no-amd': 'error',
+    'import/no-anonymous-default-export': 'warn',
     'import/no-webpack-loader-syntax': 'error',
 
-    /* eslint-config-web-app:begin
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
+    /* eslint-config-web-app:start
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
     'react/jsx-no-comment-textnodes': 'warn',
     'react/jsx-no-duplicate-props': 'warn',
@@ -281,8 +254,6 @@ module.exports = {
         ignore: [],
       },
     ],
-    'react/jsx-uses-react': 'warn',
-    'react/jsx-uses-vars': 'warn',
     'react/no-danger-with-children': 'warn',
     // Disabled because of undesirable warnings
     // See https://github.com/facebook/create-react-app/issues/5204 for
@@ -291,12 +262,10 @@ module.exports = {
     'react/no-direct-mutation-state': 'warn',
     'react/no-is-mounted': 'warn',
     'react/no-typos': 'error',
-    'react/react-in-jsx-scope': 'error',
     'react/require-render-return': 'error',
     'react/style-prop-object': 'warn',
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
-    'jsx-a11y/accessible-emoji': 'warn',
     'jsx-a11y/alt-text': 'warn',
     'jsx-a11y/anchor-has-content': 'warn',
     'jsx-a11y/anchor-is-valid': [

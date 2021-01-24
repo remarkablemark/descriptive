@@ -1,39 +1,62 @@
 # @descriptive/eslint-config-web-app
 
-Inspired by [eslint-config-react-app](https://github.com/facebook/create-react-app/tree/v3.4.0/packages/eslint-config-react-app).
+[![NPM version](https://img.shields.io/npm/v/@descriptive/eslint-config-web-app.svg)](https://www.npmjs.com/package/@descriptive/eslint-config-web-app)
 
-## Installation
+See [eslint-config-react-app@6.0.0](https://www.npmjs.com/package/eslint-config-react-app/v/6.0.0) ([repository](https://github.com/facebook/create-react-app/tree/v4.0.1/packages/eslint-config-react-app)).
+
+## Install
 
 ```sh
-$ npm install @descriptive/eslint-config-web-app
+npm install @descriptive/eslint-config-web-app
 ```
 
 ## Changes
 
-Removed the files:
+New files:
+
+```
+CHANGELOG.md
+package-lock.json
+```
+
+Removed files:
 
 ```
 LICENSE
 ```
 
-Updated the files:
+Updated files:
 
 ```
-README.md
+base.js
 index.js
+jest.js
 package.json
+README.md
 ```
 
-`package.json` dependencies diff:
+`package.json` diff:
 
 ```diff
--eslint-plugin-flowtype
--eslint-plugin-import
--eslint-plugin-jsx-a11y
--eslint-plugin-react
--eslint-plugin-react-hooks
+ {
+   "peerDependencies": {
+-    "eslint-plugin-flowtype": "^5.2.0",
+-    "eslint-plugin-jsx-a11y": "^6.3.1",
+-    "eslint-plugin-react": "^7.20.3",
+-    "eslint-plugin-react-hooks": "^4.0.8",
+   }
+}
+```
+
+Remove the dependencies:
+
+```sh
+npm rm eslint-plugin-flowtype \
+       eslint-plugin-jsx-a11y \
+       eslint-plugin-react \
+       eslint-plugin-react-hooks
 ```
 
 ## License
 
-[MIT](https://github.com/facebook/create-react-app/blob/v3.4.0/packages/eslint-config-react-app/LICENSE)
+[MIT](https://github.com/facebook/create-react-app/blob/v4.0.1/packages/eslint-config-react-app/LICENSE)
