@@ -27,7 +27,7 @@ module.exports = (resolve, rootDir, isEjecting) => {
 
     collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts'],
 
-    /* web-scripts:begin
+    /* web-scripts:start
     setupFiles: [
       isEjecting
         ? 'react-app-polyfill/jsdom'
@@ -43,9 +43,9 @@ module.exports = (resolve, rootDir, isEjecting) => {
     testEnvironment: 'jsdom',
     testRunner: require.resolve('jest-circus/runner'),
     transform: {
-      '^.+\\.(js|jsx|mjs|cjs|ts|tsx)$': isEjecting
-        ? '<rootDir>/node_modules/babel-jest'
-        : resolve('config/jest/babelTransform.js'),
+      '^.+\\.(js|jsx|mjs|cjs|ts|tsx)$': resolve(
+        'config/jest/babelTransform.js'
+      ),
       '^.+\\.css$': resolve('config/jest/cssTransform.js'),
       '^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)': resolve(
         'config/jest/fileTransform.js'
@@ -89,6 +89,7 @@ module.exports = (resolve, rootDir, isEjecting) => {
     'resetModules',
     'restoreMocks',
     'snapshotSerializers',
+    'testMatch',
     'transform',
     'transformIgnorePatterns',
     'watchPathIgnorePatterns',
