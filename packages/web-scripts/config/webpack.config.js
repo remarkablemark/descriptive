@@ -103,7 +103,11 @@ module.exports = function (webpackEnv) {
   // Get environment variables to inject into our app.
   const env = getClientEnvironment(paths.publicUrlOrPath.slice(0, -1));
 
+  /* web-scripts:start
   const shouldUseReactRefresh = env.raw.FAST_REFRESH;
+  */
+  const shouldUseReactRefresh = false;
+  // web-scripts:end
 
   // common function to get style loaders
   const getStyleLoaders = (cssOptions, preProcessor) => {
@@ -679,7 +683,6 @@ module.exports = function (webpackEnv) {
       new webpack.DefinePlugin(env.stringified),
       // This is necessary to emit hot updates (CSS and Fast Refresh):
       isEnvDevelopment && new webpack.HotModuleReplacementPlugin(),
-      /* web-scripts:start
       // Experimental hot reloading for React .
       // https://github.com/facebook/react/tree/master/packages/react-refresh
       isEnvDevelopment &&
@@ -695,7 +698,6 @@ module.exports = function (webpackEnv) {
             sockIntegration: false,
           },
         }),
-      // web-scripts:end */
       // Watcher doesn't work well if you mistype casing in a path so we use
       // a plugin that prints an error when you attempt to do this.
       // See https://github.com/facebook/create-react-app/issues/240
