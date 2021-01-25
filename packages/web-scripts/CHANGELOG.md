@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.0...@descriptive/web-scripts@2.0.1) (2021-01-25)
+
+
+### Bug Fixes
+
+* **web-scripts:** disable FAST_REFRESH so file save reloads page ([c56a60f](https://github.com/remarkablemark/descriptive/commit/c56a60f4ee4ced7f60c4d46d5c4e57cf13b3a369))
+
+
+
+
+
 # [2.0.0](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@1.1.1...@descriptive/web-scripts@2.0.0) (2021-01-25)
 
 
