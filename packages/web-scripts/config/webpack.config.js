@@ -809,17 +809,12 @@ module.exports = function (webpackEnv) {
           },
           */
           extends: [require.resolve('@descriptive/eslint-config-web-app/base')],
-          rules: {
-            ...(isEnvDevelopment && {
-              'no-console': 0,
-              'no-debugger': 0,
-              'no-unused-vars': 0,
-              'prettier/prettier': 0,
-              'sort-imports': 0,
-            }),
-          },
           // web-scripts:end
         },
+        /* web-scripts:start */
+        failOnError: false,
+        emitWarning: true,
+        // web-scripts:end
       }),
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
