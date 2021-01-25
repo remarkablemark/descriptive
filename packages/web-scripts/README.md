@@ -55,11 +55,13 @@ README.md
 ```diff
  {
    "dependencies": {
+-    "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
 -    "babel-preset-react-app": "^10.0.0",
 -    "eslint-config-react-app": "^6.0.0",
 -    "eslint-plugin-react": "^7.21.5",
 -    "eslint-plugin-react-hooks": "^4.2.0",
 -    "react-app-polyfill": "^2.0.0",
+-    "react-refresh": "^0.8.3",
 +    "@babel/plugin-proposal-class-properties": "^7.12.1",
 +    "@babel/preset-env": "^7.12.11",
 +    "@descriptive/eslint-config-web-app": "1.0.1",
@@ -77,11 +79,13 @@ README.md
 Remove the dependencies:
 
 ```sh
-npm rm -S babel-preset-react-app \
+npm rm -S @pmmmwh/react-refresh-webpack-plugin \
+          babel-preset-react-app \
           eslint-config-react-app \
           eslint-plugin-react \
           eslint-plugin-react-hooks \
-          react-app-polyfill
+          react-app-polyfill \
+          react-refresh
 ```
 
 Remove the devDependencies:
