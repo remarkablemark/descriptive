@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@1.1.1...@descriptive/web-scripts@2.0.0) (2021-01-25)
+
+
+### Bug Fixes
+
+* **web-scripts:** fix webpack.config.js and start script ([093bc74](https://github.com/remarkablemark/descriptive/commit/093bc748cab0a79c3324b5cac1742d6b37d9d162))
+
+
+### Features
+
+* **web-scripts:** update to create-react-app v4.0.1 ([8ade347](https://github.com/remarkablemark/descriptive/commit/8ade347d9c2ab687be4fbda0769b57416c55e83f))
+
+
+### BREAKING CHANGES
+
+* **web-scripts:** update from create-react-app v3.4.1 to v4.0.1,
+which is react-scripts 3.4.1 to 4.0.1
+
+https://github.com/facebook/create-react-app/tree/v4.0.1/packages/react-scripts
+
+
+
+
+
 ## [1.1.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@1.1.0...@descriptive/web-scripts@1.1.1) (2020-06-28)
 
 **Note:** Version bump only for package @descriptive/web-scripts

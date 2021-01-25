@@ -1,6 +1,6 @@
 {
   "name": "@descriptive/web-scripts",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "Configuration and scripts inspired by Create React App.",
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
     "@babel/core": "7.12.3",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
-    "@descriptive/eslint-config-web-app": "1.0.1",
+    "@descriptive/eslint-config-web-app": "2.0.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
     "@svgr/webpack": "5.5.0",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
