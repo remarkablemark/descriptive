@@ -51,9 +51,7 @@ const createDevServerConfig = require('../config/webpackDevServer.config');
 const getClientEnvironment = require('../config/env');
 /* web-scripts:start
 const react = require(require.resolve('react', { paths: [paths.appPath] }));
-*/
-const react = {};
-// web-scripts:end
+// web-scripts:end */
 
 const env = getClientEnvironment(paths.publicUrlOrPath.slice(0, -1));
 const useYarn = fs.existsSync(paths.yarnLockFile);
@@ -151,6 +149,7 @@ checkBrowsers(paths.appPath, isInteractive)
         clearConsole();
       }
 
+      /* web-scripts:start
       if (env.raw.FAST_REFRESH && semver.lt(react.version, '16.10.0')) {
         console.log(
           chalk.yellow(
@@ -160,6 +159,7 @@ checkBrowsers(paths.appPath, isInteractive)
           )
         );
       }
+      // web-scripts:end */
 
       console.log(chalk.cyan('Starting the development server...\n'));
       openBrowser(urls.localUrlForBrowser);
