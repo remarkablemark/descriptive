@@ -810,7 +810,7 @@ module.exports = function (webpackEnv) {
             }),
           },
           */
-          extends: [require.resolve('@descriptive/eslint-config-web-app')],
+          extends: [require.resolve('@descriptive/eslint-config-web-app/base')],
           rules: {
             ...(isEnvDevelopment && {
               'no-console': 0,
