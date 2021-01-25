@@ -25,13 +25,13 @@
     "script"
   ],
   "dependencies": {
-    "jscodeshift": "0.10.0"
+    "jscodeshift": "0.11.0"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "jest": "26.0.1",
-    "prettier": "^2.0.5"
+    "eslint": "^7.18.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jest": "^26.6.3",
+    "prettier": "2.1.2"
   },
   "files": [
     "/transforms/require-default.js",
@@ -39,7 +39,7 @@
     "/utilities.js"
   ],
   "engines": {
-    "node": ">=10"
+    "node": "^10.12.0 || >=12.0.0"
   },
   "license": "MIT"
 }
