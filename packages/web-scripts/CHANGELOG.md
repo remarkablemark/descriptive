@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.1...@descriptive/web-scripts@2.0.2) (2021-01-25)
+
+
+### Bug Fixes
+
+* **web-scripts:** remove `react-refresh` and webpack plugin ([804bdc0](https://github.com/remarkablemark/descriptive/commit/804bdc04dc6f8c681f199cde609a50b2113a977b))
+
+
+
+
+
 ## [2.0.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.0...@descriptive/web-scripts@2.0.1) (2021-01-25)
 
 ### Bug Fixes
