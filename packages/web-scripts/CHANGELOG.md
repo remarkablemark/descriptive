@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.2...@descriptive/web-scripts@2.0.3) (2021-01-25)
+
+
+### Bug Fixes
+
+* **web-scripts:** don't fail to compile due to eslint error ([5de3972](https://github.com/remarkablemark/descriptive/commit/5de3972119bf26aa9a6861d0b79682dc572627c0))
+
+
+
+
+
 ## [2.0.2](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.1...@descriptive/web-scripts@2.0.2) (2021-01-25)
 
 
