@@ -8,6 +8,7 @@ module.exports = {
       'always',
       [
         'all',
+        'deps',
         'release',
         require('./package').name,
         ...readdirSync('./packages'),
