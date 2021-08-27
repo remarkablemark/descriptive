@@ -13,26 +13,26 @@
 Clone repository:
 
 ```sh
-$ git clone https://github.com/remarkablemark/descriptive.git && cd descriptive
+git clone https://github.com/remarkablemark/descriptive.git && cd descriptive
 ```
 
 Install root dependencies:
 
 ```sh
-$ npm install
+npm install
 ```
 
 Install and link dependencies:
 
 ```sh
-$ npm run bootstrap
+npm run bootstrap
 ```
 
 Update `package-lock.json`:
 
 ```sh
-$ rm -rf node_modules package-lock.json
-$ npm install
+rm -rf node_modules package-lock.json
+npm install
 ```
 
 ## Develop
@@ -42,28 +42,35 @@ Let's say you made changes to the `web-scripts` package.
 To test those changes, create a global [symlink](https://docs.npmjs.com/cli/link.html) for that package:
 
 ```sh
-$ cd packages/web-scripts/
-$ npm link
+cd packages/web-scripts/
+npm link
 ```
 
 Then symlink the package in a project that's using it:
 
 ```sh
-$ cd ~/projects/test/
-$ npm link @descriptive/web-scripts
-# rm -rf node_modules && npm link @descriptive/web-scripts && npm install
+cd ~/projects/test/
+npm link @descriptive/web-scripts
+```
+
+If that doesn't work, remove `node_modules`, link, and install:
+
+```sh
+rm -rf node_modules
+npm link @descriptive/web-scripts
+npm install
 ```
 
 Once you're done testing the package, remove the symlinks:
 
 ```sh
-$ cd ~/projects/test/
-$ npm unlink @descriptive/web-scripts
+cd ~/projects/test/
+npm unlink @descriptive/web-scripts
 ```
 
 ```sh
-$ cd descriptive/packages/web-scripts/
-$ npm unlink
+cd descriptive/packages/web-scripts/
+npm unlink
 ```
 
 ## Release
@@ -71,17 +78,17 @@ $ npm unlink
 List updated packages:
 
 ```sh
-$ npm run updated
+npm run updated
 ```
 
 Preview release (make sure to clean up the changes afterwards):
 
 ```sh
-$ npm run release:dry-run
+npm run release:dry-run
 ```
 
 Publish any updated packages (only collaborators with credentials can do this):
 
 ```sh
-$ npm run release
+npm run release
 ```
