@@ -28,7 +28,7 @@
   },
   "types": "./lib/react-app.d.ts",
   "dependencies": {
-    "@babel/core": "7.12.3",
+    "@babel/core": "7.15.5",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "@descriptive/eslint-config-web-app": "2.0.0",
