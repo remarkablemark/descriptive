@@ -1,6 +1,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types#Common_image_file_types
 // https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers#Browser_compatibility
-const regex = /.+\.(apng|bmp|gif|ico|cur|jpg|jpeg|jfif|pjpeg|pjp|png|svg|tif|tiff|webp|3gp|aac|flac|mpg|mpeg|mp3|mp4|m4a|oga|ogg|wav|webm)$/i;
+const regex =
+  /.+\.(apng|bmp|gif|ico|cur|jpg|jpeg|jfif|pjpeg|pjp|png|svg|tif|tiff|webp|3gp|aac|flac|mpg|mpeg|mp3|mp4|m4a|oga|ogg|wav|webm)$/i;
 
 /**
  * Appends `default` property to CommonJS `require` that match certain media extensions.
