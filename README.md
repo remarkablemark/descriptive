@@ -10,19 +10,19 @@
 
 ## Install
 
-Clone repository:
+Clone the repository:
 
 ```sh
 git clone https://github.com/remarkablemark/descriptive.git && cd descriptive
 ```
 
-Install root dependencies:
+Install the root dependencies:
 
 ```sh
 npm install
 ```
 
-Install and link dependencies:
+Install and link the package dependencies:
 
 ```sh
 npm run bootstrap
@@ -37,19 +37,19 @@ npm install
 
 ## Develop
 
-Let's say you made changes to the `web-scripts` package.
+Let's say you made changes to `web-scripts`.
 
-To test those changes, create a global [symlink](https://docs.npmjs.com/cli/link.html) for that package:
+To test those changes, create a global [symlink](https://docs.npmjs.com/cli/link.html):
 
 ```sh
-cd packages/web-scripts/
+cd descriptive/packages/web-scripts/
 npm link
 ```
 
-Then symlink the package in a project that's using it:
+Symlink the package in the project that's using it:
 
 ```sh
-cd ~/projects/test/
+cd path/to/project/
 npm link @descriptive/web-scripts
 ```
 
@@ -61,16 +61,35 @@ npm link @descriptive/web-scripts
 npm install
 ```
 
-Once you're done testing the package, remove the symlinks:
+If it's not working, try reinstalling `node_modules` before linking:
 
 ```sh
-cd ~/projects/test/
+cd path/to/project
+rm -rf node_modules
+npm install
+npm link @descriptive/web-scripts
+```
+
+Once you're done testing the package, remove the symlink:
+
+```sh
+cd path/to/project/
 npm unlink @descriptive/web-scripts
 ```
 
 ```sh
 cd descriptive/packages/web-scripts/
-npm unlink
+npm unlink -g
+```
+
+If you made changes to both `web-scripts` and `eslint-config-web-app`, make sure to link both packages:
+
+```sh
+cd descriptive/packages/eslint-config-web-app/
+npm link
+cd ../web-scripts/
+npm link @descriptive/eslint-config-web-app
+npm link
 ```
 
 ## Release
