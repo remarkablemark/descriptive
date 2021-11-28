@@ -4,6 +4,7 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
     "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
     "release": "lerna publish --exact --no-git-reset",
     "release:dry-run": "lerna version --exact --no-git-tag-version --no-push",
     "test": "lerna run test",
