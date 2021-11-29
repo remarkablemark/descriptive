@@ -1,8 +1,4 @@
 {
-  "packages": [
-    "packages/*"
-  ],
-  "version": "independent",
   "command": {
     "publish": {
       "allowBranch": "master",
@@ -10,17 +6,20 @@
       "commitHooks": false,
       "exact": true,
       "ignoreChanges": [
+        "**/*.md",
+        "**/*.spec.*",
+        "**/*.test.*",
         "**/__fixtures__/**",
         "**/__snapshots__/**",
-        "**/__tests__/**",
-        "**/*.md",
-        "**/*.spec.js",
-        "**/*.test.js"
+        "**/__tests__/**"
       ],
       "ignoreScripts": true,
       "message": "chore(release): publish",
       "verbose": true,
       "yes": true
     }
-  }
+  },
+  "npmClient": "npm",
+  "packages": ["packages/*"],
+  "version": "independent"
 }
