@@ -32,7 +32,7 @@
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "@descriptive/eslint-config-web-app": "2.0.0",
-    "@svgr/webpack": "6.0.0",
+    "@svgr/webpack": "6.1.0",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
     "babel-eslint": "^10.1.0",
