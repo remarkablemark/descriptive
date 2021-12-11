@@ -1,14 +1,10 @@
 {
   "name": "root",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "clean": "lerna clean --yes",
-    "lint": "lerna run lint",
-    "lint:fix": "lerna run lint:fix",
-    "release": "lerna publish --exact --no-git-reset",
-    "release:dry-run": "lerna version --exact --no-git-tag-version --no-push",
-    "test": "lerna run test",
-    "updated": "lerna updated"
+    "clean": "lerna clean",
+    "lint": "lerna run lint --parallel",
+    "lint:fix": "lerna run lint:fix --parallel",
+    "test": "lerna run test -- --colors"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
