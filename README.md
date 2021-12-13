@@ -94,20 +94,4 @@ npm link
 
 ## Release
 
-List updated packages:
-
-```sh
-npm run updated
-```
-
-Preview release (make sure to clean up the changes afterwards):
-
-```sh
-npm run release:dry-run
-```
-
-Publish any updated packages (only collaborators with credentials can do this):
-
-```sh
-npm run release
-```
+Release and publish are automated by [Lerna](https://github.com/lerna/lerna).
