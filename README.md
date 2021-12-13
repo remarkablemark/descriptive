@@ -16,23 +16,10 @@ Clone the repository:
 git clone https://github.com/remarkablemark/descriptive.git && cd descriptive
 ```
 
-Install the root dependencies:
+Install and bootstrap:
 
 ```sh
-npm install
-```
-
-Install and link the package dependencies:
-
-```sh
-npm run bootstrap
-```
-
-Update `package-lock.json`:
-
-```sh
-rm -rf node_modules package-lock.json
-npm install
+yarn
 ```
 
 ## Develop
