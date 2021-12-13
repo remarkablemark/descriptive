@@ -16,7 +16,6 @@ New files:
 
 ```
 CHANGELOG.md
-package-lock.json
 ```
 
 Removed files and folders:
