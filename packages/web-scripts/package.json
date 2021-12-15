@@ -33,7 +33,7 @@
     "@babel/preset-env": "^7.12.11",
     "@descriptive/eslint-config-web-app": "2.0.1",
     "@svgr/webpack": "6.1.2",
-    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^4.5.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.2.1",
