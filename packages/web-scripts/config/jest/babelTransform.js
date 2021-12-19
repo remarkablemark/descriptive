@@ -8,8 +8,9 @@
 // @remove-on-eject-end
 'use strict';
 
-const babelJest = require('babel-jest');
+const babelJest = require('babel-jest').default;
 
+/* web-scripts:start
 const hasJsxRuntime = (() => {
   if (process.env.DISABLE_NEW_JSX_TRANSFORM === 'true') {
     return false;
@@ -22,6 +23,7 @@ const hasJsxRuntime = (() => {
     return false;
   }
 })();
+// web-scripts:end */
 
 module.exports = babelJest.createTransformer({
   presets: [
@@ -32,7 +34,7 @@ module.exports = babelJest.createTransformer({
         runtime: hasJsxRuntime ? 'automatic' : 'classic',
       },
       */
-      require.resolve('@babel/preset-env'),
+      require.resolve('@descriptive/babel-preset-web-app'),
       // web-scripts:end
     ],
   ],

@@ -98,8 +98,6 @@ function getClientEnvironment(publicUrl) {
         WDS_SOCKET_PATH: process.env.WDS_SOCKET_PATH,
         WDS_SOCKET_PORT: process.env.WDS_SOCKET_PORT,
         // Whether or not react-refresh is enabled.
-        // react-refresh is not 100% stable at this time,
-        // which is why it's disabled by default.
         // It is defined here so it is available in the webpackHotDevClient.
         /* web-scripts:start
         FAST_REFRESH: process.env.FAST_REFRESH !== 'false',

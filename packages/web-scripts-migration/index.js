@@ -50,7 +50,7 @@ write('package.json', packageJson);
  */
 log('Adding `.eslintrc.json`...');
 write('.eslintrc.json', {
-  extends: '@descriptive/web-app',
+  extends: '@descriptive/eslint-config-web-app',
   plugins: ['prettier'],
   rules: {
     'no-debugger': 'error',

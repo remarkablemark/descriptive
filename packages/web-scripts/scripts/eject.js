@@ -109,7 +109,12 @@ prompts({
     }
   }
 
-  const folders = ['config', 'config/jest', 'scripts'];
+  const folders = [
+    'config',
+    'config/jest',
+    'scripts',
+    'config/webpack/persistentCache',
+  ];
 
   // Make shallow array of files paths
   const files = folders.reduce((files, folder) => {
@@ -138,7 +143,7 @@ prompts({
   console.log(cyan(`Copying files into ${appPath}`));
 
   folders.forEach(folder => {
-    fs.mkdirSync(path.join(appPath, folder));
+    fs.mkdirSync(path.join(appPath, folder), { recursive: true });
   });
 
   files.forEach(file => {
@@ -233,14 +238,22 @@ prompts({
   // Add Babel config
   console.log(`  Adding ${cyan('Babel')} preset`);
   appPackage.babel = {
+    /* web-scripts:start
     presets: ['react-app'],
+    */
+    presets: ['@descriptive/eslint-config-web-app'],
+    // web-scripts:end
   };
 
   // Add ESlint config
   if (!appPackage.eslintConfig) {
     console.log(`  Adding ${cyan('ESLint')} configuration`);
     appPackage.eslintConfig = {
+      /* web-scripts:start
       extends: 'react-app',
+      */
+      presets: ['@descriptive/eslint-config-web-app'],
+      // web-scripts:end
     };
   }
 
@@ -262,7 +275,11 @@ prompts({
         content
           // Remove react-scripts types
           .replace(
+            /* web-scripts:start
             /^\s*\/\/\/\s*<reference\s+types.+?"react-scripts".*\/>.*(?:\n|$)/gm,
+            */
+            /^\s*\/\/\/\s*<reference\s+types.+?"web-scripts".*\/>.*(?:\n|$)/gm,
+            // web-scripts:end
             ''
           )
           .trim() + os.EOL;
@@ -295,7 +312,11 @@ prompts({
       appPath,
       'node_modules',
       '.bin',
+      /* web-scripts:start
       'react-scripts.cmd'
+      */
+      'web-scripts.cmd'
+      // web-scripts:end
     );
     let windowsCmdFileContent;
     if (process.platform === 'win32') {

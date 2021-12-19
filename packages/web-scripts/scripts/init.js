@@ -126,23 +126,16 @@ module.exports = function (
 
   const templatePackage = templateJson.package || {};
 
-  // TODO: Deprecate support for root-level `dependencies` and `scripts` in v5.
-  // These should now be set under the `package` key.
+  // This was deprecated in CRA v5.
   if (templateJson.dependencies || templateJson.scripts) {
     console.log();
     console.log(
-      chalk.yellow(
-        'Root-level `dependencies` and `scripts` keys in `template.json` are deprecated.\n' +
-          'This template should be updated to use the new `package` key.'
+      chalk.red(
+        'Root-level `dependencies` and `scripts` keys in `template.json` were deprecated for Create React App 5.\n' +
+          'This template needs to be updated to use the new `package` key.'
       )
     );
     console.log('For more information, visit https://cra.link/templates');
-  }
-  if (templateJson.dependencies) {
-    templatePackage.dependencies = templateJson.dependencies;
-  }
-  if (templateJson.scripts) {
-    templatePackage.scripts = templateJson.scripts;
   }
 
   // Keys to ignore in templatePackage
@@ -191,10 +184,17 @@ module.exports = function (
   const templateScripts = templatePackage.scripts || {};
   appPackage.scripts = Object.assign(
     {
+      /* web-scripts:start
       start: 'react-scripts start',
       build: 'react-scripts build',
       test: 'react-scripts test',
       eject: 'react-scripts eject',
+      */
+      start: '@descriptive/web-scripts start',
+      build: '@descriptive/web-scripts build',
+      test: '@descriptive/web-scripts test',
+      eject: '@descriptive/web-scripts eject',
+      // web-scripts:end
     },
     templateScripts
   );
@@ -212,7 +212,11 @@ module.exports = function (
 
   // Setup the eslint config
   appPackage.eslintConfig = {
+    /* web-scripts:start
     extends: 'react-app',
+    */
+    extends: '@descriptive/eslint-config-web-app',
+    // web-scripts:end
   };
 
   // Setup the browsers list
@@ -297,7 +301,12 @@ module.exports = function (
   } else {
     command = 'npm';
     remove = 'uninstall';
-    args = ['install', '--save', verbose && '--verbose'].filter(e => e);
+    args = [
+      'install',
+      '--no-audit', // https://github.com/facebook/create-react-app/issues/11174
+      '--save',
+      verbose && '--verbose',
+    ].filter(e => e);
   }
 
   // Install additional template dependencies, if present.
@@ -315,12 +324,18 @@ module.exports = function (
 
   // Install react and react-dom for backward compatibility with old CRA cli
   // which doesn't install react and react-dom along with react-scripts
+  /* web-scripts:start
   if (!isReactInstalled(appPackage)) {
     args = args.concat(['react', 'react-dom']);
   }
+  // web-scripts:end */
 
   // Install template dependencies, and react and react-dom if missing.
+  /* web-scripts:start
   if ((!isReactInstalled(appPackage) || templateName) && args.length > 1) {
+  */
+  if (templateName && args.length > 1) {
+    // web-scripts:end
     console.log();
     console.log(`Installing template dependencies using ${command}...`);
 
@@ -408,6 +423,7 @@ module.exports = function (
   console.log('Happy hacking!');
 };
 
+/* web-scripts:start
 function isReactInstalled(appPackage) {
   const dependencies = appPackage.dependencies || {};
 
@@ -416,3 +432,4 @@ function isReactInstalled(appPackage) {
     typeof dependencies['react-dom'] !== 'undefined'
   );
 }
+// web-scripts:end */
