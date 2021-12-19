@@ -1,7 +1,7 @@
 {
   "name": "@descriptive/eslint-config-web-app",
   "version": "2.0.1",
-  "description": "ESLint configuration used by web apps",
+  "description": "ESLint configuration used by web app",
   "repository": {
     "type": "git",
     "url": "https://github.com/remarkablemark/descriptive.git",
@@ -17,27 +17,22 @@
     "jest.js"
   ],
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.0.0",
-    "@typescript-eslint/parser": "^4.0.0",
-    "babel-eslint": "^10.0.0",
-    "eslint": "^7.5.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^24.0.0",
-    "eslint-plugin-testing-library": "^3.9.0"
-  },
-  "peerDependenciesMeta": {
-    "eslint-plugin-jest": {
-      "optional": true
-    },
-    "eslint-plugin-testing-library": {
-      "optional": true
-    }
+    "eslint": "^8.0.0"
   },
   "dependencies": {
-    "confusing-browser-globals": "^1.0.10"
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@descriptive/babel-preset-web-app": "1.1.0",
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "confusing-browser-globals": "^1.0.11",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-testing-library": "^5.0.1"
   },
   "engines": {
-    "node": "^10.12.0 || >=12.0.0"
+    "node": ">=14.0.0"
   },
   "publishConfig": {
     "access": "public"
