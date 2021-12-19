@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.19...@descriptive/web-scripts@2.1.0) (2021-12-19)
+
+
+### Features
+
+* **web-scripts:** update react-scripts@5.0.0 ([b83b089](https://github.com/remarkablemark/descriptive/commit/b83b089911fe35b3b7eaba0ef425daa23453e007))
+
+
+
+
+
 ## [2.0.19](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.18...@descriptive/web-scripts@2.0.19) (2021-12-19)
 
 **Note:** Version bump only for package @descriptive/web-scripts

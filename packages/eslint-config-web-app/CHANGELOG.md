@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/remarkablemark/descriptive/compare/@descriptive/eslint-config-web-app@2.0.1...@descriptive/eslint-config-web-app@3.0.0) (2021-12-19)
+
+
+### Features
+
+* **eslint-config-web-app:** update to eslint-config-react-app@7.0.0 ([84ac7b3](https://github.com/remarkablemark/descriptive/commit/84ac7b334b84d9fae48f23fb9e2a651fa984391a))
+
+
+### BREAKING CHANGES
+
+* **eslint-config-web-app:** update to eslint-config-react-app@7.0.0
+
+https://github.com/facebook/create-react-app/tree/v5.0.0/packages/eslint-config-react-app
+
+
+
+
+
 ## [2.0.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/eslint-config-web-app@2.0.0...@descriptive/eslint-config-web-app@2.0.1) (2021-12-11)
 
 **Note:** Version bump only for package @descriptive/eslint-config-web-app
