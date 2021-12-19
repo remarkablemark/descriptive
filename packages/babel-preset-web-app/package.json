@@ -1,6 +1,6 @@
 {
   "name": "@descriptive/babel-preset-web-app",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Babel preset used by web app",
   "repository": {
     "type": "git",
