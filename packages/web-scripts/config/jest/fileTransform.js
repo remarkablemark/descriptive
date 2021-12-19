@@ -8,6 +8,7 @@ const camelcase = require('camelcase');
 
 module.exports = {
   process(src, filename) {
+    /* web-scripts:start
     const assetFilename = JSON.stringify(path.basename(filename));
 
     if (filename.match(/\.svg$/)) {
@@ -36,5 +37,6 @@ module.exports = {
     }
 
     return `module.exports = ${assetFilename};`;
+    // web-scripts:end */
   },
 };

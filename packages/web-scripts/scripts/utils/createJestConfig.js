@@ -41,7 +41,6 @@ module.exports = (resolve, rootDir, isEjecting) => {
       '<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}',
     ],
     testEnvironment: 'jsdom',
-    testRunner: require.resolve('jest-circus/runner'),
     transform: {
       '^.+\\.(js|jsx|mjs|cjs|ts|tsx)$': resolve(
         'config/jest/babelTransform.js'
@@ -57,7 +56,9 @@ module.exports = (resolve, rootDir, isEjecting) => {
     ],
     modulePaths: modules.additionalModulePaths || [],
     moduleNameMapper: {
+      /* web-scripts:start
       '^react-native$': 'react-native-web',
+      // web-scripts:end */
       '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
       ...(modules.jestAliases || {}),
     },
