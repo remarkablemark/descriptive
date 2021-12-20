@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.2](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.1.1...@descriptive/web-scripts@2.1.2) (2021-12-20)
+
+
+### Bug Fixes
+
+* **web-scripts:** add missing dep @descriptive/eslint-config-web-app ([0891b1d](https://github.com/remarkablemark/descriptive/commit/0891b1dee51af006e4d0974585f239efc6232785))
+
+
+
+
+
 ## [2.1.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.1.0...@descriptive/web-scripts@2.1.1) (2021-12-20)
 
 **Note:** Version bump only for package @descriptive/web-scripts
