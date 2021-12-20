@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.1.0...@descriptive/web-scripts@2.1.1) (2021-12-20)
+
+**Note:** Version bump only for package @descriptive/web-scripts
+
+
+
+
+
 # [2.1.0](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.19...@descriptive/web-scripts@2.1.0) (2021-12-19)
 
 

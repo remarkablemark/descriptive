@@ -1,6 +1,6 @@
 {
   "name": "@descriptive/eslint-config-web-app",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "ESLint configuration used by web app",
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.3",
-    "@descriptive/babel-preset-web-app": "1.1.0",
+    "@descriptive/babel-preset-web-app": "1.1.1",
     "@rushstack/eslint-patch": "^1.1.0",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
