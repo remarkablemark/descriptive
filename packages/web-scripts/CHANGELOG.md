@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.1.2...@descriptive/web-scripts@3.0.0) (2021-12-20)
+
+
+### Features
+
+* **web-scripts:** rename appTypeDeclarations to web-app-env.d.ts ([c3775cd](https://github.com/remarkablemark/descriptive/commit/c3775cddb1d32c2c2916a4b3fc6f56d1ab84e849))
+
+
+### BREAKING CHANGES
+
+* **web-scripts:** bump major version since web-scripts@2.1.0 was
+updated to react-scripts@5.0.0
+
+
+
+
+
 ## [2.1.2](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.1.1...@descriptive/web-scripts@2.1.2) (2021-12-20)
 
 
