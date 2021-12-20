@@ -106,7 +106,11 @@ module.exports = {
   // These properties only exist before ejecting:
   ownPath: resolveOwn('.'),
   ownNodeModules: resolveOwn('node_modules'), // This is empty on npm 3
+  /* web-scripts:start
   appTypeDeclarations: resolveApp('src/react-app-env.d.ts'),
+  */
+  appTypeDeclarations: resolveApp('src/web-app-env.d.ts'),
+  // web-scripts:end
   ownTypeDeclarations: resolveOwn('lib/react-app.d.ts'),
 };
 
@@ -148,7 +152,11 @@ if (
     // These properties only exist before ejecting:
     ownPath: resolveOwn('.'),
     ownNodeModules: resolveOwn('node_modules'),
+    /* web-scripts:start
     appTypeDeclarations: resolveOwn(`${templatePath}/src/react-app-env.d.ts`),
+    */
+    appTypeDeclarations: resolveOwn(`${templatePath}/src/web-app-env.d.ts`),
+    // web-scripts:end
     ownTypeDeclarations: resolveOwn('lib/react-app.d.ts'),
   };
 }
