@@ -5,211 +5,112 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [3.0.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@3.0.0...@descriptive/web-scripts@3.0.1) (2022-01-16)
 
-
 ### Bug Fixes
 
-* **web-scripts:** set dependency mini-css-extract-plugin to ~2.4.5 ([9fdcf28](https://github.com/remarkablemark/descriptive/commit/9fdcf288936ea19efcf56961c4591bebb0ccb9f9))
+- **web-scripts:** set dependency mini-css-extract-plugin to ~2.4.5 ([9fdcf28](https://github.com/remarkablemark/descriptive/commit/9fdcf288936ea19efcf56961c4591bebb0ccb9f9))
 
-
-
-
-
-# [3.0.0](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.1.2...@descriptive/web-scripts@3.0.0) (2021-12-20)
-
+## [3.0.0](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.1.2...@descriptive/web-scripts@3.0.0) (2021-12-20)
 
 ### Features
 
-* **web-scripts:** rename appTypeDeclarations to web-app-env.d.ts ([c3775cd](https://github.com/remarkablemark/descriptive/commit/c3775cddb1d32c2c2916a4b3fc6f56d1ab84e849))
-
+- **web-scripts:** rename appTypeDeclarations to web-app-env.d.ts ([c3775cd](https://github.com/remarkablemark/descriptive/commit/c3775cddb1d32c2c2916a4b3fc6f56d1ab84e849))
 
 ### BREAKING CHANGES
 
-* **web-scripts:** bump major version since web-scripts@2.1.0 was
-updated to react-scripts@5.0.0
-
-
-
-
+- **web-scripts:** bump major version since web-scripts@2.1.0 was
+  updated to react-scripts@5.0.0
 
 ## [2.1.2](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.1.1...@descriptive/web-scripts@2.1.2) (2021-12-20)
 
-
 ### Bug Fixes
 
-* **web-scripts:** add missing dep @descriptive/eslint-config-web-app ([0891b1d](https://github.com/remarkablemark/descriptive/commit/0891b1dee51af006e4d0974585f239efc6232785))
-
-
-
-
+- **web-scripts:** add missing dep @descriptive/eslint-config-web-app ([0891b1d](https://github.com/remarkablemark/descriptive/commit/0891b1dee51af006e4d0974585f239efc6232785))
 
 ## [2.1.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.1.0...@descriptive/web-scripts@2.1.1) (2021-12-20)
 
 **Note:** Version bump only for package @descriptive/web-scripts
 
-
-
-
-
 # [2.1.0](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.19...@descriptive/web-scripts@2.1.0) (2021-12-19)
-
 
 ### Features
 
-* **web-scripts:** update react-scripts@5.0.0 ([b83b089](https://github.com/remarkablemark/descriptive/commit/b83b089911fe35b3b7eaba0ef425daa23453e007))
-
-
-
-
+- **web-scripts:** update react-scripts@5.0.0 ([b83b089](https://github.com/remarkablemark/descriptive/commit/b83b089911fe35b3b7eaba0ef425daa23453e007))
 
 ## [2.0.19](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.18...@descriptive/web-scripts@2.0.19) (2021-12-19)
 
 **Note:** Version bump only for package @descriptive/web-scripts
 
-
-
-
-
 ## [2.0.18](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.17...@descriptive/web-scripts@2.0.18) (2021-12-16)
 
 **Note:** Version bump only for package @descriptive/web-scripts
-
-
-
-
 
 ## [2.0.17](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.16...@descriptive/web-scripts@2.0.17) (2021-12-15)
 
 **Note:** Version bump only for package @descriptive/web-scripts
 
-
-
-
-
 ## [2.0.16](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.15...@descriptive/web-scripts@2.0.16) (2021-12-15)
 
 **Note:** Version bump only for package @descriptive/web-scripts
-
-
-
-
 
 ## [2.0.15](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.14...@descriptive/web-scripts@2.0.15) (2021-12-15)
 
 **Note:** Version bump only for package @descriptive/web-scripts
 
-
-
-
-
 ## [2.0.14](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.13...@descriptive/web-scripts@2.0.14) (2021-12-15)
 
 **Note:** Version bump only for package @descriptive/web-scripts
-
-
-
-
 
 ## [2.0.13](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.12...@descriptive/web-scripts@2.0.13) (2021-12-15)
 
 **Note:** Version bump only for package @descriptive/web-scripts
 
-
-
-
-
 ## [2.0.12](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.11...@descriptive/web-scripts@2.0.12) (2021-12-14)
 
 **Note:** Version bump only for package @descriptive/web-scripts
-
-
-
-
 
 ## [2.0.11](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.10...@descriptive/web-scripts@2.0.11) (2021-12-14)
 
 **Note:** Version bump only for package @descriptive/web-scripts
 
-
-
-
-
 ## [2.0.10](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.9...@descriptive/web-scripts@2.0.10) (2021-12-14)
 
 **Note:** Version bump only for package @descriptive/web-scripts
-
-
-
-
 
 ## [2.0.9](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.8...@descriptive/web-scripts@2.0.9) (2021-12-14)
 
 **Note:** Version bump only for package @descriptive/web-scripts
 
-
-
-
-
 ## [2.0.8](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.7...@descriptive/web-scripts@2.0.8) (2021-12-14)
 
 **Note:** Version bump only for package @descriptive/web-scripts
-
-
-
-
 
 ## [2.0.7](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.6...@descriptive/web-scripts@2.0.7) (2021-12-14)
 
 **Note:** Version bump only for package @descriptive/web-scripts
 
-
-
-
-
 ## [2.0.6](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.5...@descriptive/web-scripts@2.0.6) (2021-12-13)
 
 **Note:** Version bump only for package @descriptive/web-scripts
-
-
-
-
 
 ## [2.0.5](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.4...@descriptive/web-scripts@2.0.5) (2021-12-13)
 
 **Note:** Version bump only for package @descriptive/web-scripts
 
-
-
-
-
 ## [2.0.4](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.3...@descriptive/web-scripts@2.0.4) (2021-12-11)
 
 **Note:** Version bump only for package @descriptive/web-scripts
 
-
-
-
-
 ## [2.0.3](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.2...@descriptive/web-scripts@2.0.3) (2021-01-25)
-
 
 ### Bug Fixes
 
-* **web-scripts:** don't fail to compile due to eslint error ([5de3972](https://github.com/remarkablemark/descriptive/commit/5de3972119bf26aa9a6861d0b79682dc572627c0))
-
-
-
-
+- **web-scripts:** don't fail to compile due to eslint error ([5de3972](https://github.com/remarkablemark/descriptive/commit/5de3972119bf26aa9a6861d0b79682dc572627c0))
 
 ## [2.0.2](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.1...@descriptive/web-scripts@2.0.2) (2021-01-25)
 
-
 ### Bug Fixes
 
-* **web-scripts:** remove `react-refresh` and webpack plugin ([804bdc0](https://github.com/remarkablemark/descriptive/commit/804bdc04dc6f8c681f199cde609a50b2113a977b))
-
-
-
-
+- **web-scripts:** remove `react-refresh` and webpack plugin ([804bdc0](https://github.com/remarkablemark/descriptive/commit/804bdc04dc6f8c681f199cde609a50b2113a977b))
 
 ## [2.0.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.0.0...@descriptive/web-scripts@2.0.1) (2021-01-25)
 
