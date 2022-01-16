@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@3.0.0...@descriptive/web-scripts@3.0.1) (2022-01-16)
+
+
+### Bug Fixes
+
+* **web-scripts:** set dependency mini-css-extract-plugin to ~2.4.5 ([9fdcf28](https://github.com/remarkablemark/descriptive/commit/9fdcf288936ea19efcf56961c4591bebb0ccb9f9))
+
+
+
+
+
 # [3.0.0](https://github.com/remarkablemark/descriptive/compare/@descriptive/web-scripts@2.1.2...@descriptive/web-scripts@3.0.0) (2021-12-20)
 
 
