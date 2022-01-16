@@ -4,6 +4,7 @@
 
 [Monorepo](https://github.com/lerna/lerna) of [packages](packages):
 
+- [babel-preset-web-app](packages/babel-preset-web-app)
 - [eslint-config-web-app](packages/eslint-config-web-app)
 - [web-scripts-migration](packages/web-scripts-migration)
 - [web-scripts](packages/web-scripts)
@@ -13,7 +14,8 @@
 Clone the repository:
 
 ```sh
-git clone https://github.com/remarkablemark/descriptive.git && cd descriptive
+git clone https://github.com/remarkablemark/descriptive.git
+cd descriptive
 ```
 
 Install and bootstrap:
