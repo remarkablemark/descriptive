@@ -1,6 +1,6 @@
 # @descriptive
 
-[![Build Status](https://github.com/remarkablemark/descriptive/workflows/build/badge.svg?branch=master)](https://github.com/remarkablemark/descriptive/actions?query=workflow%3Abuild)
+[![build](https://github.com/remarkablemark/descriptive/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/descriptive/actions/workflows/build.yml)
 
 [Monorepo](https://github.com/lerna/lerna) of [packages](packages):
 
