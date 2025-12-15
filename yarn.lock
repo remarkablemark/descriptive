@@ -2647,9 +2647,9 @@
     picomatch "^2.2.2"
 
 "@rushstack/eslint-patch@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz#7f698254aadf921e48dda8c0a6b304026b8a9323"
-  integrity sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A==
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.15.0.tgz#8184bcb37791e6d3c3c13a9bfbe4af263f66665f"
+  integrity sha512-ojSshQPKwVvSMR8yT2L/QtUkV5SXi/IfDiJ4/8d6UbTPjiHVmxZzUAzGD8Tzks1b9+qQkZa0isUOvYObedITaw==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
