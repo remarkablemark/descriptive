@@ -71,7 +71,7 @@
     "webpack": "^5.64.4",
     "webpack-dev-server": "^5.2.2",
     "webpack-manifest-plugin": "^4.0.2",
-    "workbox-webpack-plugin": "^6.4.1"
+    "workbox-webpack-plugin": "^7.4.0"
   },
   "optionalDependencies": {
     "fsevents": "^2.3.2"
