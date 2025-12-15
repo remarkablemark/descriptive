@@ -31,7 +31,7 @@
     "@babel/core": "^7.16.0",
     "@descriptive/babel-preset-web-app": "1.1.1",
     "@descriptive/eslint-config-web-app": "3.0.1",
-    "@svgr/webpack": "^5.5.0",
+    "@svgr/webpack": "^8.1.0",
     "babel-jest": "^27.4.2",
     "babel-loader": "^10.0.0",
     "babel-plugin-named-asset-import": "^0.3.8",
