@@ -1063,9 +1063,9 @@
     source-map-support "^0.5.16"
 
 "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3":
-  version "7.28.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.4.tgz#a70226016fabe25c5783b2f22d3e1c9bc5ca3326"
-  integrity sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==
+  version "7.28.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.6.tgz#d267a43cb1836dc4d182cce93ae75ba954ef6d2b"
+  integrity sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==
 
 "@babel/template@^7.27.1", "@babel/template@^7.27.2":
   version "7.27.2"
@@ -1249,7 +1249,7 @@
   dependencies:
     find-up "^7.0.0"
 
-"@commitlint/types@^20.2.0", "@commitlint/types@^20.3.1":
+"@commitlint/types@^20.3.1":
   version "20.3.1"
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-20.3.1.tgz#084cf4cb142826d7a0eab378f838514e3e75f048"
   integrity sha512-VmIFV/JkBRhDRRv7N5B7zEUkNZIx9Mp+8Pe65erz0rKycXLsi8Epcw0XJ+btSeRXgTzE7DyOyA9bkJ9mn/yqVQ==
