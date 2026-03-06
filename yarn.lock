@@ -1268,7 +1268,7 @@
   dependencies:
     escalade "^3.2.0"
 
-"@commitlint/types@^20.4.0", "@commitlint/types@^20.4.3":
+"@commitlint/types@^20.4.3":
   version "20.4.3"
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-20.4.3.tgz#aa3fb9732dd42dea590d165214631ebc7b07eb59"
   integrity sha512-51OWa1Gi6ODOasPmfJPq6js4pZoomima4XLZZCrkldaH2V5Nb3bVhNXPeT6XV0gubbainSpTw4zi68NqAeCNCg==
@@ -4602,9 +4602,9 @@ babel-jest@30.2.0, babel-jest@^30.2.0:
     slash "^3.0.0"
 
 babel-loader@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-10.0.0.tgz#b9743714c0e1e084b3e4adef3cd5faee33089977"
-  integrity sha512-z8jt+EdS61AMw22nSfoNJAZ0vrtmhPRVi6ghL3rCeRZI8cdNYFiV5xeV3HbE7rlZZNmGH8BVccwWt8/ED0QOHA==
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-10.1.0.tgz#3ac62a9a47dba6b1be77fb24764ec5784981fbbe"
+  integrity sha512-5HTUZa013O4SWEYlJDHexrqSIYkWatfA9w/ZZQa7V2nMc0dRWkfu/0pmioC7XMYm8M7Z/3+q42NWj6e+fAT0MQ==
   dependencies:
     find-up "^5.0.0"
 
@@ -5372,14 +5372,6 @@ conventional-commits-parser@^3.2.0:
     meow "^8.0.0"
     split2 "^3.0.0"
     through2 "^4.0.0"
-
-conventional-commits-parser@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-6.3.0.tgz#fc170753ca66f31940a438539bf48e4406ac54b5"
-  integrity sha512-RfOq/Cqy9xV9bOA8N+ZH6DlrDR+5S3Mi0B5kACEjESpE+AviIpAptx9a9cFpWCCvgRtWT+0BbUw+e1BZfts9jg==
-  dependencies:
-    "@simple-libs/stream-utils" "^1.2.0"
-    meow "^13.0.0"
 
 conventional-commits-parser@^6.3.0:
   version "6.3.0"
