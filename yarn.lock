@@ -8918,7 +8918,7 @@ jest-resolve-dependencies@30.4.1:
     jest-regex-util "30.4.0"
     jest-snapshot "30.4.1"
 
-jest-resolve@30.4.1:
+jest-resolve@30.4.1, jest-resolve@^30.2.0:
   version "30.4.1"
   resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-30.4.1.tgz#b9e432892dc0e2a470eb4826ef5f120a50b3205e"
   integrity sha512-Zry8Yq/yJcNAZ7dJ5F2heic8AheXvbFZ7XI5V+h28nrYZ7Qoyy4dItq8OodjnYD270mvX+ZudmrNV9cysqhW5Q==
@@ -8929,20 +8929,6 @@ jest-resolve@30.4.1:
     jest-pnp-resolver "^1.2.3"
     jest-util "30.4.1"
     jest-validate "30.4.1"
-    slash "^3.0.0"
-    unrs-resolver "^1.7.11"
-
-jest-resolve@^30.2.0:
-  version "30.3.0"
-  resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-30.3.0.tgz#b7bee9927279805b1b50715d2170a545553b87ff"
-  integrity sha512-NRtTAHQlpd15F9rUR36jqwelbrDV/dY4vzNte3S2kxCKUJRYNd5/6nTSbYiak1VX5g8IoFF23Uj5TURkUW8O5g==
-  dependencies:
-    chalk "^4.1.2"
-    graceful-fs "^4.2.11"
-    jest-haste-map "30.3.0"
-    jest-pnp-resolver "^1.2.3"
-    jest-util "30.3.0"
-    jest-validate "30.3.0"
     slash "^3.0.0"
     unrs-resolver "^1.7.11"
 
@@ -9064,18 +9050,6 @@ jest-util@30.4.1:
     ci-info "^4.2.0"
     graceful-fs "^4.2.11"
     picomatch "^4.0.3"
-
-jest-validate@30.3.0:
-  version "30.3.0"
-  resolved "https://registry.yarnpkg.com/jest-validate/-/jest-validate-30.3.0.tgz#215e11b8fcc5e2ca4b99ea5d730a5b4c969e4355"
-  integrity sha512-I/xzC8h5G+SHCb2P2gWkJYrNiTbeL47KvKeW5EzplkyxzBRBw1ssSHlI/jXec0ukH2q7x2zAWQm7015iusg62Q==
-  dependencies:
-    "@jest/get-type" "30.1.0"
-    "@jest/types" "30.3.0"
-    camelcase "^6.3.0"
-    chalk "^4.1.2"
-    leven "^3.1.0"
-    pretty-format "30.3.0"
 
 jest-validate@30.4.1:
   version "30.4.1"
@@ -11380,15 +11354,6 @@ pretty-format@30.2.0:
   version "30.2.0"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-30.2.0.tgz#2d44fe6134529aed18506f6d11509d8a62775ebe"
   integrity sha512-9uBdv/B4EefsuAL+pWqueZyZS2Ba+LxfFeQ9DN14HU4bN8bhaxKdkpjpB6fs9+pSjIBu+FXQHImEg8j/Lw0+vA==
-  dependencies:
-    "@jest/schemas" "30.0.5"
-    ansi-styles "^5.2.0"
-    react-is "^18.3.1"
-
-pretty-format@30.3.0:
-  version "30.3.0"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-30.3.0.tgz#e977eed4bcd1b6195faed418af8eac68b9ea1f29"
-  integrity sha512-oG4T3wCbfeuvljnyAzhBvpN45E8iOTXCU/TD3zXW80HA3dQ4ahdqMkWGiPWZvjpQwlbyHrPTWUAqUzGzv4l1JQ==
   dependencies:
     "@jest/schemas" "30.0.5"
     ansi-styles "^5.2.0"
